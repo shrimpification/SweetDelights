@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SweetDelights Cakes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">SweetDelights</div>
+        <ul class="nav-links">
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#featured">Cakes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="top-title-container" id="titleBlock">
+        <div class="top-title">EVERYTHING IS CAKE</div>
+        <div class="heart">❤️</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="model-container">
+        <model-viewer
+            id="cakeModel"
+            src="assets/wedding-cake.glb"
+            alt="Wedding Cake 3D Model"
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            interaction-policy="none"
+            disable-zoom
+            camera-orbit="0deg 60deg 100%">
+        </model-viewer>
+
+        <model-viewer
+            id="cakeModel2"
+            src="assets/chocolate.glb"
+            alt="Chocolate Cake 3D Model"
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            interaction-policy="none"
+            disable-zoom
+            camera-orbit="0deg 60deg 100%">
+        </model-viewer>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="homepage" id="homepage">
+        <h1>Welcome to SweetDelights</h1>
+        <p>At SweetDelights, we craft cakes that are as beautiful as they are delicious. From weddings to birthdays, our mission is to bring joy and sweetness to every celebration.</p>
+        <p>Using the finest ingredients and artistic design, we ensure each cake is a memorable centerpiece for your special moments.</p>
+        <div class="store-section">
+            <h2>Our Featured Cakes</h2>
+            <div class="store-grid">
+        
+                <!-- Wedding Cake -->
+                <div class="store-item">
+                    <model-viewer
+                        src="assets/wedding-cake.glb"
+                        alt="Wedding Cake"
+                        disable-zoom
+                        camera-controls
+                        auto-rotate
+                        rotation-per-second="30deg"
+                        camera-orbit="0deg 60deg 200%"
+                        class="mini-model">
+                    </model-viewer>
+                    <h3>Wedding Cake</h3>
+                    <p>$120 - Elegant layered cake for weddings.</p>
+                </div>
+        
+                <!-- Chocolate Cake -->
+                <div class="store-item">
+                    <model-viewer
+                        src="assets/chocolate.glb"
+                        alt="Chocolate Cake"
+                        disable-zoom
+                        camera-controls
+                        auto-rotate
+                        rotation-per-second="30deg"
+                        camera-orbit="0deg 60deg 200%"
+                        class="mini-model">
+                    </model-viewer>
+                    <h3>Chocolate Cake</h3>
+                    <p>$45 - Rich chocolate cake with ganache.</p>
+                </div>
+        
+                <!-- Birthday Cake -->
+                <div class="store-item">
+                    <model-viewer
+                        src="assets/wedding-cake.glb"
+                        alt="Birthday Cake"
+                        disable-zoom
+                        camera-controls
+                        auto-rotate
+                        rotation-per-second="30deg"
+                        camera-orbit="0deg 60deg 200%"
+                        class="mini-model">
+                    </model-viewer>
+                    <h3>Birthday Cake</h3>
+                    <p>$60 - Fun and colorful birthday cake.</p>
+                </div>
+        
+                <!-- Custom Cake -->
+                <div class="store-item">
+                    <model-viewer
+                        src="assets/chocolate.glb"
+                        alt="Custom Cake"
+                        disable-zoom
+                        camera-controls
+                        auto-rotate
+                        rotation-per-second="30deg"
+                        camera-orbit="0deg 60deg 200%"
+                        class="mini-model">
+                    </model-viewer>
+                    <h3>Custom Cake</h3>
+                    <p>$90 - Personalized cake for any occasion.</p>
+                </div>
+        
+            </div>
+        </div>
+        
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About SweetDelights</h2>
+        <p>Founded in 2020, SweetDelights has been dedicated to blending creativity with taste. Our team of pastry artists hand-craft each cake with precision and passion.</p>
+        <p>Whether you’re celebrating a milestone or treating yourself, we believe every moment deserves something sweet.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>Do you offer custom cake designs?</h3>
+            <p>Yes! Bring your ideas, reference images, or themes — we will create your dream cake.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How early should I place an order?</h3>
+            <p>For custom cakes, we recommend placing an order at least 2–3 weeks in advance.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer delivery?</h3>
+            <p>Yes, we deliver across Toronto and nearby regions for an additional fee.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@sweetdelights.com</p>
+        <p>Phone: (416) 555-CAKE</p>
+        <p>Location: 123 Dessert Lane, Toronto, ON</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+
+            <div class="footer-col">
+                <h3>SweetDelights</h3>
+                <p>Baking happiness since 2020.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#featured">Cakes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <p>Instagram | TikTok | YouTube</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 SweetDelights | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
